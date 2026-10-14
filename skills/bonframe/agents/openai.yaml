@@ -1,0 +1,11 @@
+interface:
+  display_name: "Bonframe"
+  short_description: "Create, translate and review videos through Bonframe MCP"
+  default_prompt: "Use $bonframe to find my video projects and complete my requested production task through the authorized MCP connection."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "bonframe"
+      description: "Authorized Bonframe video production and persistent task MCP service"
+policy:
+  allow_implicit_invocation: true
